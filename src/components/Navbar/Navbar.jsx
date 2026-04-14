@@ -26,7 +26,7 @@ const Navbar = () => {
                     <img src={navImg} alt="" />
                 </div>
 
-                <div className="hidden md:flex navbar-end gap-4 ">
+                <div className="hidden lg:flex navbar-end gap-4 ">
                     <NavLink to="/" className={({ isActive }) => `btn ${isActive ? "bg-[#244D3F] text-white" : " "}`}><FaHome />Home </NavLink>
                     <NavLink to="/timeline" className={({ isActive }) => `btn ${isActive ? "bg-[#244D3F] text-white" : " "}`}><IoTimeOutline />Timeline </NavLink>
                     <NavLink to="/stats" className={({ isActive }) => `btn ${isActive ? "bg-[#244D3F] text-white" : " "}`}><TfiStatsUp />Stats </NavLink>
