@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Rivera",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "alex.rivera@email.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["highschool", "best friend"],
+    "bio": "Childhood friend from high school. We used to play basketball every weekend and still share memes daily.",
+    "goal": 14,
+    "next_due_date": "2025-07-06"
+  },
+  {
+    "id": 2,
+    "name": "Priya Sharma",
+    "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+    "email": "priya.sharma92@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["work", "close friend"],
+    "bio": "Colleague turned close friend at the marketing agency. We bond over coffee and career advice.",
+    "goal": 10,
+    "next_due_date": "2025-07-04"
+  },
+  {
+    "id": 3,
+    "name": "Marcus Thompson",
+    "picture": "https://randomuser.me/api/portraits/men/67.jpg",
+    "email": "marcus.t@email.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": ["college", "gaming buddy"],
+    "bio": "Met during freshman year at university. We still play online games together on weekends.",
+    "goal": 21,
+    "next_due_date": "2025-06-27"
+  },
+  {
+    "id": 4,
+    "name": "Sophie Laurent",
+    "picture": "https://randomuser.me/api/portraits/women/22.jpg",
+    "email": "sophie.laurent@outlook.fr",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["travel", "friend"],
+    "bio": "Met while backpacking in Europe. We plan trips together and exchange travel stories.",
+    "goal": 14,
+    "next_due_date": "2025-07-03"
+  },
+  {
+    "id": 5,
+    "name": "Rahul Patel",
+    "picture": "https://randomuser.me/api/portraits/men/51.jpg",
+    "email": "rahul.patel1995@yahoo.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["family friend", "cricket"],
+    "bio": "Family friend since we were kids. We watch cricket matches together and discuss sports.",
+    "goal": 7,
+    "next_due_date": "2025-07-03"
+  },
+  {
+    "id": 6,
+    "name": "Elena Vargas",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "elena.vargas@protonmail.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["neighbor", "book club"],
+    "bio": "My next-door neighbor who introduced me to her book club. We discuss novels over tea.",
+    "goal": 30,
+    "next_due_date": "2025-06-21"
+  },
+  {
+    "id": 7,
+    "name": "Jamal Khan",
+    "picture": "https://randomuser.me/api/portraits/men/88.jpg",
+    "email": "jamal.khan@live.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["gym", "workout partner"],
+    "bio": "Workout buddy from the local gym. We motivate each other during early morning sessions.",
+    "goal": 10,
+    "next_due_date": "2025-07-02"
+  },
+  {
+    "id": 8,
+    "name": "Aisha Okoro",
+    "picture": "https://randomuser.me/api/portraits/women/33.jpg",
+    "email": "aisha.okoro@gmail.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["university", "study group"],
+    "bio": "Study partner from grad school. We still help each other with career challenges and celebrate successes.",
+    "goal": 7,
+    "next_due_date": "2025-07-04"
+  }
+]

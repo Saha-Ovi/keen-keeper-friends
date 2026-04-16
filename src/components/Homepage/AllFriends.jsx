@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { use } from 'react';
+import Card from '../card/Card';
 
-const AllFriends = () => {
+const AllFriends = ({friendsPromise}) => {
+    const friends=use(friendsPromise);
+    // console.log(friends);
     return (
-        <div>
-            
+        <div className='container mx-auto my-8'>
+            <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 lg:gap-6'>
+                {
+                    friends.map(friend=><Card key={friend.id} friend={friend}></Card>)
+                }
+            </div>
         </div>
     );
 };
