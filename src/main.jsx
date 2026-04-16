@@ -5,11 +5,14 @@ import App from './App.jsx'
 import { RouterProvider } from 'react-router'
 
 import { router } from './routes/Router.jsx'
+import ActionProvider from './context/ActionProvider.jsx'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <ActionProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </ActionProvider>
   </StrictMode>,
 )

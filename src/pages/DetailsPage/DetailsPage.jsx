@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BiMessageRoundedDots } from 'react-icons/bi';
 import { CiVideoOn } from 'react-icons/ci';
 import { HiOutlineBellSnooze } from 'react-icons/hi2';
@@ -8,6 +8,7 @@ import { useLoaderData, useParams } from 'react-router';
 import callImg from '../../assets/call.png';
 import textImg from '../../assets/text.png';
 import videoImg from '../../assets/video.png';
+import { ActionContext } from '../../context/ActionContext';
 
 const DetailsPage = () => {
     const { id } = useParams();
@@ -16,6 +17,8 @@ const DetailsPage = () => {
     // console.log(friends);
     const friend = friends.find(friend => friend.id === Number(id));
     // console.log(friend);
+    const{handleAction}=useContext(ActionContext);
+
     return (
         <div className='container mx-auto my-6 lg:my-10'>
             <div className='grid grid-cols-1 justify-center items-center lg:grid-cols-2'>
@@ -89,20 +92,20 @@ const DetailsPage = () => {
                         <h2 className='text-[#244D3F] text-xl p-2 text-center lg:text-start'>Quick Check-In</h2>
                         <div className='flex flex-col md:flex-row gap-2 justify-between items-center '>
                             <div >
-                                <button className='btn flex-col p-15 rounded-2xl'>
+                                <button onClick={()=>handleAction({card:friend,type:"call"})} className='btn flex-col p-15 rounded-2xl'>
                                     <img src={callImg} alt="" />
                                     Call
                                 </button>
 
                             </div>
                             <div>
-                                <button className='btn flex-col p-15 rounded-2xl'>
+                                <button onClick={()=>handleAction({card:friend,type:'text'})} className='btn flex-col p-15 rounded-2xl'>
                                     <img src={textImg} alt="" />
                                     Text
                                 </button>
                             </div>
                             <div>
-                                <button className='btn flex-col p-15 rounded-2xl'>
+                                <button onClick={()=>handleAction({card:friend,type:'video'})} className='btn flex-col p-15 rounded-2xl'>
                                     <img src={videoImg} alt="" />
                                     Video
                                 </button>
@@ -117,18 +120,3 @@ const DetailsPage = () => {
 
 export default DetailsPage;
 
-
-//  <div className='shadow-2xl rounded-2xl px-2 py-15 space-y-4'>
-//     <h2 className='text-[#244D3F] text-xl p-2'>Quick Check-In</h2>
-//     <div className='flex justify-between items-center '>
-//         <div className='px-4 py-8'>
-//             <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><LuPhoneCall />Call</button>
-//         </div>
-//         <div>
-//             <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><BiMessageRoundedDots />Text</button>
-//         </div>
-//         <div>
-//             <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><CiVideoOn />Video</button>
-//         </div>
-//     </div>
-// </div>
