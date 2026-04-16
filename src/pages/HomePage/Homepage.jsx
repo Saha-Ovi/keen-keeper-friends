@@ -3,7 +3,7 @@ import Banner from '../../components/Homepage/Banner';
 import Stats from '../../components/Homepage/Stats';
 import AllFriends from '../../components/Homepage/AllFriends';
 const friendsPromise=fetch('/friends.json').then(res=>res.json());
-console.log(friendsPromise);
+// console.log(friendsPromise);
 
 const Homepage = () => {
     return (
