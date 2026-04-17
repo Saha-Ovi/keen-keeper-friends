@@ -1,6 +1,64 @@
+# Project Name : 🚀 Keen Keeper Friends
+
+---
+
+## 📌 Project Overview :
+
+I developed a React-based interactive app with a structured navigation system including Home, Timeline, and Stats pages. The homepage loads data from a JSON file and renders it dynamically into reusable card components. Each card is connected to a detailed view using dynamic routing with React Router, where additional information about the selected person is displayed.
+
+Inside the details page, I implemented three core interaction features — Call, Text, and Video. These actions are handled using the Context API to manage global state, allowing data to be updated and shared across components seamlessly. Every interaction is instantly reflected in the Timeline page, where activities are displayed sequentially.
+
+At the same time, the Stats page visualizes user interactions through a dynamic pie chart that updates in real time based on the accumulated data. I also added a footer that highlights the purpose and goal of the application, giving it a complete and polished feel. This project demonstrates practical use of routing, global state management, and synchronized UI updates across multiple views.
+
+---
+
+## 🛠️ Technologies Used :
+
+- ⚛️ React JS
+- 🔀 React Router
+- 🎨 Tailwind CSS
+- 🔔 NPM Toastify
+- 🌼 Daisy UI
+- 📜 JavaScript (ES6)
+- 📦 JSON (For Product Data)
+- 🔤 Google Font
+- 🎯 React Icons
+
+---
+
+## ✨ Key Features :
+
+### 🔹 1. Dynamic Routing & Detailed Views
+
+Each card is connected to a dedicated details page using React Router’s dynamic routing, allowing users to explore individual data with a clean and structured navigation flow.
+
+---
+
+### 🔹 2. Real-Time State Management with Context API
+
+User actions like Call, Text, and Video are managed through the Context API, enabling instant updates across the Timeline without prop drilling and keeping the UI synchronized.
+
+---
+
+### 🔹 3. Live Data Visualization
+
+All interactions are tracked and reflected in a Stats page through a dynamic pie chart, which updates in real time based on user activity, providing a clear visual representation of data.
+
+---
+
+## 🎯 Project Goal
+
+The goal of this project is to demonstrate how modern React applications can manage shared state efficiently, handle dynamic routing, and synchronize UI updates across multiple components while providing a smooth and interactive user experience.
+
+---
+
+
+---
+
 # 👥 KeenKeeper — Keep Your Friendships Alive
 
 ### 📅 Deadline For 60 marks: 17 April 2026 | ⏱️11:59PM
+
 ### 📅 Deadline for 30 marks: Any time after 17 April 2026
 
 ---
@@ -21,6 +79,7 @@
 ### 1. 🔝 Navbar
 
 **Navbar:**
+
 - Design the Navbar exactly like the Figma design
 - Put your **logo on the left side**
 - Put your **navigation links on the right side** — links are: **Home**, **Timeline**, **Stats**
@@ -32,6 +91,7 @@
 ### 2. 🎯 Banner
 
 **Banner Section (Top of the Home page):**
+
 - Show a centered **title** and **subtitle**
 - Add a **button with an icon** (e.g., "Add a Friend")
 - Show **4 summary cards below the banner**, following the Figma design
@@ -42,6 +102,7 @@
 
 Create a file (e.g., `friends.json`) with **6–10 realistic friend profiles**.  
 Each friend object must have these fields:
+
 ```json
 {
   "id": 1,
@@ -68,13 +129,13 @@ Each friend object must have these fields:
 - Display all friends from your JSON file as cards, following the Figma design
 - **Each card must show:**
 
-| Field | Details |
-|---|---|
-| 📸 Picture | Friend's photo |
-| 🧑 Name | Friend's full name |
-| 📅 Days Since Contact | How many days ago you contacted them |
-| 🏷️ Tags | e.g., "college", "work" |
-| 🔴 Status | Background color changes based on status (match Figma) |
+| Field                 | Details                                                |
+| --------------------- | ------------------------------------------------------ |
+| 📸 Picture            | Friend's photo                                         |
+| 🧑 Name               | Friend's full name                                     |
+| 📅 Days Since Contact | How many days ago you contacted them                   |
+| 🏷️ Tags               | e.g., "college", "work"                                |
+| 🔴 Status             | Background color changes based on status (match Figma) |
 
 - Cards must be shown in a **4-column grid layout on large screens**
 - Clicking a card must navigate the user to that friend's **Detail Page**
@@ -88,6 +149,7 @@ This page should have a **two-column layout** (follow the Figma design).
 **Left Column — Friend Info Card:**
 
 Show the following details:
+
 - Profile picture
 - Name
 - Status (with color)
@@ -97,26 +159,29 @@ Show the following details:
 
 Also add these **3 action buttons** (no functionality required for these buttons):
 
-| Button |
-|---|
+| Button            |
+| ----------------- |
 | ⏰ Snooze 2 Weeks |
-| 📦 Archive |
-| 🗑️ Delete |
+| 📦 Archive        |
+| 🗑️ Delete         |
 
 ---
 
 **Right Column — 3 sections:**
 
 **① Stats Cards (show 3 cards):**
+
 - Days Since Contact
 - Goal (in days)
 - Next Due Date
 
 **② Relationship Goal Card:**
+
 - Show the current contact goal
 - Add an **Edit** button
 
 **③ Quick Check-In Card:**
+
 - Add 3 buttons with icons: **Call**, **Text**, **Video**
 - When clicked, each button adds a new entry to the **Timeline** (see Section 6)
 
@@ -127,6 +192,7 @@ Also add these **3 action buttons** (no functionality required for these buttons
 When a user clicks **Call**, **Text**, or **Video** in the Quick Check-In Card:
 
 ✅ A **new timeline entry** is automatically added with:
+
 - The **current date**
 - A **title** like:
   - "Call with Alex Johnson"
@@ -135,8 +201,6 @@ When a user clicks **Call**, **Text**, or **Video** in the Quick Check-In Card:
 
 ✅ A **toast notification** must appear when any of these buttons is clicked.
 
-
-
 ---
 
 ### 7. 📜 Timeline Page
@@ -144,14 +208,15 @@ When a user clicks **Call**, **Text**, or **Video** in the Quick Check-In Card:
 This page shows the **history of all interactions** (calls, texts, video calls) logged from the Friend Details page.
 
 **This page must have:**
+
 - A **"Timeline"** heading at the top
 - Timeline entries displayed following the Figma design
 - Each entry must show:
 
-| Field | Details |
-|---|---|
-| 📅 Date | When the interaction happened |
-| 🔣 Icon | Different icon for Call / Text / Video |
+| Field    | Details                                   |
+| -------- | ----------------------------------------- |
+| 📅 Date  | When the interaction happened             |
+| 🔣 Icon  | Different icon for Call / Text / Video    |
 | 📝 Title | e.g., "Call with Sarah", "Text with Mike" |
 
 ---
@@ -170,12 +235,12 @@ This page shows the **history of all interactions** (calls, texts, video calls) 
 
 ### 10. 🛠️ Other Requirements(Required for marks)
 
-| # | Requirement |
-|---|---|
-| 10.1 | Add a **404 Page** for any unknown/invalid route |
+| #    | Requirement                                                                           |
+| ---- | ------------------------------------------------------------------------------------- |
+| 10.1 | Add a **404 Page** for any unknown/invalid route                                      |
 | 10.2 | Show a **loading animation** while the friends data is being fetched on the Home page |
-| 10.3 | Show a **relevant toast notification** when the user clicks Call, Text, or Video |
-| 10.4 | Make sure **reloading any page after deployment** does not cause an error |
+| 10.3 | Show a **relevant toast notification** when the user clicks Call, Text, or Video      |
+| 10.4 | Make sure **reloading any page after deployment** does not cause an error             |
 
 ---
 
@@ -199,6 +264,7 @@ This page shows the **history of all interactions** (calls, texts, video calls) 
 ### C3. 📄 GitHub README
 
 Add a well-designed `README.md` to your GitHub repository that includes:
+
 - Name of your project
 - A short description
 - Technologies you used
@@ -217,12 +283,12 @@ These are not required but will make your project stand out:
 
 ## 🛠️ Technologies to Use
 
-| Technology | Purpose |
-|---|---|
-| **React.js/Next.js** | Build the UI |
-| **React Router DOM/App router(Next.js)** | Handle page navigation |
-| **Tailwind CSS+Any component library** | Styling and responsiveness |
-| **Recharts** | Chart |
+| Technology                               | Purpose                    |
+| ---------------------------------------- | -------------------------- |
+| **React.js/Next.js**                     | Build the UI               |
+| **React Router DOM/App router(Next.js)** | Handle page navigation     |
+| **Tailwind CSS+Any component library**   | Styling and responsiveness |
+| **Recharts**                             | Chart                      |
 
 ---
 
