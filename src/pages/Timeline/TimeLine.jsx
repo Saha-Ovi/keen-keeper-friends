@@ -4,6 +4,7 @@ import { FaDatabase } from 'react-icons/fa';
 import callImg from '../../assets/call.png';
 import textImg from '../../assets/text.png';
 import videoImg from '../../assets/video.png';
+import { IoIosArrowDropdownCircle } from 'react-icons/io';
 
 const TimeLine = () => {
     const { activeAction } = useContext(ActionContext);
@@ -17,10 +18,10 @@ const TimeLine = () => {
         : activeAction;
     return (
         <div className='container mx-auto my-10 space-y-4'>
-
-            <div className='flex justify-center items-center'>
+            <h2 className='text-2xl lg:text-4xl font-bold'>Timeline</h2>
+            <div className='flex justify-start items-start'>
                 <div className="dropdown  dropdown-end">
-                    <div tabIndex={0} role="button" className="btn m-1">Filter TimeLine  ⬇️</div>
+                    <div tabIndex={0} role="button" className="btn m-1">Filter TimeLine <IoIosArrowDropdownCircle /></div>
                     <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                         <li onClick={() => setSortType("")}><a>All</a></li>
                         <li onClick={() => setSortType("call")}><a>Call</a></li>

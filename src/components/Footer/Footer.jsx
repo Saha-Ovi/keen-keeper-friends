@@ -1,15 +1,16 @@
 import React from 'react';
+import footImg from '../../assets/logo-xl.png'
 
 const Footer = () => {
     return (
         <div className='bg-[#244D3F]'>
             <footer className="footer footer-horizontal footer-center  text-primary-content p-10">
                     <div className='text-center'>
-                        <h1 className='text-2xl md:text-4xl lg:text-6xl font-extrabold'>KeenKeeper</h1>
-                        <p className='text-sm'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
+                        <img src={footImg} alt="" />
+                        <p className='text-sm lg:text-lg'>Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.</p>
                     </div>
                 <nav>
-                    <h2 className='font-bold'>Social Links</h2>
+                    <h2 className='font-bold text-lg'>Social Links</h2>
                     <div className="grid grid-flow-col gap-4">
                         <a href=''>
                             <svg

@@ -31,7 +31,7 @@ const Stats = () => {
             <div >
                 <h2 className='text-2xl md:text-4xl font-extrabold text-center'>Friendship Analytics</h2>
             </div>
-            <div className='shadow-2xl flex justify-center gap-3 mb-4'>
+            <div className='shadow-2xl flex justify-center items-center gap-3 p-6 md:p-10'>
 
                 <PieChart style={{ width: '80%', maxWidth: '500px', maxHeight: '80vh', aspectRatio: 1 }} responsive>
                     <Pie
