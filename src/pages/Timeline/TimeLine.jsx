@@ -18,10 +18,10 @@ const TimeLine = () => {
         : activeAction;
     return (
         <div className='container mx-auto my-10 space-y-4'>
-            <h2 className='text-2xl lg:text-4xl font-bold p-3'>Timeline</h2>
-            <div className='flex justify-start items-start'>
+            <h2 className='text-2xl lg:text-4xl font-bold text-center lg:text-start'>Timeline</h2>
+            <div className='flex justify-center lg:justify-start items-center lg:items-start'>
                 <div className="dropdown  dropdown-end">
-                    <div tabIndex={0} role="button" className="btn m-3">Filter TimeLine <IoIosArrowDropdownCircle /></div>
+                    <div tabIndex={0} role="button" className="btn m-1">Filter TimeLine <IoIosArrowDropdownCircle /></div>
                     <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                         <li onClick={() => setSortType("")}><a>All</a></li>
                         <li onClick={() => setSortType("call")}><a>Call</a></li>
